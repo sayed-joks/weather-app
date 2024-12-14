@@ -1,0 +1,129 @@
+*{
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+body{
+    background-image: linear-gradient(rgba(0, 0, 0, .5),rgba(0, 0, 0, .5)),url(../img/background.jpg);
+    background-size: cover;
+    background-position: center;
+    background-attachment: fixed;
+    font-family: 'Poppins', sans-serif;
+    color: #fff;
+    text-transform: capitalize;
+}
+
+.weather-input{
+    width: 25%;
+    position: fixed;
+    background: rgba(255, 255, 255, .1);
+    backdrop-filter: blur(5px);
+    inset: 0;
+    padding: 1rem 2.5rem;
+}
+.input-group{
+    position: relative;
+    display: flex;
+    align-items: center;
+    margin: 2rem 0 ;
+}
+.input-group input{
+    background: #f8f8f8;
+    text-transform: capitalize;
+    padding: 1rem;
+    font-size: 15px;
+    border-radius: 16px;
+    width: 99%;
+    margin: auto;
+    outline: none;
+    border: none;
+}
+.input-group .fa-search{
+    position: absolute;
+    right: 15px;
+    cursor: pointer;
+    font-size: 22px;
+}
+.weather-output{
+    width: 75%;
+    inset: 0;
+    margin-left: 25%;
+    padding: 2rem;
+}
+.highlight{
+    display: grid;
+    grid-template-columns: repeat(3, 308px);
+    grid-auto-flow: row;
+    row-gap: 10px;
+    column-gap: 10px;
+}
+.highlight div{
+    height: 200px;
+    display: grid;
+    align-items: center;
+    justify-content: center;
+    text-align: center;
+    background: rgba(255, 255, 255, .1);
+    backdrop-filter: blur(8px);
+    border-radius: 20px;
+    padding: 1rem;
+    box-shadow: rgba(0, 0, 0, 0.19) 0px 10px 20px, rgba(0, 0, 0, 0.23) 0px 6px 6px;
+}
+.highlight i{
+    font-size: 45px;
+    color: #e0dbdb;
+}
+.sun span{
+    display: flex;
+    align-items: center;
+    gap: 10px;
+}
+.temp{
+    font-size: 45px;
+    font-weight: 700;
+}
+.city{
+    font-size: 30px;
+    font-weight: 700;
+    text-transform: capitalize;
+    margin: 1rem 0;
+}
+.date{
+    font-size: 20px;
+    font-weight: 700;
+    text-transform: capitalize;
+    margin: 1rem 0;
+}
+.description{
+    font-size: 20px;
+    font-weight: 700;
+    text-transform: capitalize;
+    margin: 1rem 0;
+}
+.feelsike{
+    font-size: 20px;
+    font-weight: 700;
+    text-transform: capitalize;
+    margin: 1rem 0;
+}
+.heading{
+    color: #fff;
+    border: 2px solid gray;
+    display: inline-block;
+    text-align: center;
+    padding: 8px;
+    border-radius: 20px;
+    background: rgba(255, 255, 255, .1);
+    backdrop-filter: blur(2px);
+    width: fit-content;
+}
+.inner img{
+    width: 100px;
+}
+.inner{
+    background: rgba(255, 255, 255, .1);
+    text-align: center;
+    padding: 1rem;
+    border-radius: 14px;
+    backdrop-filter: blur(5px);
+}
